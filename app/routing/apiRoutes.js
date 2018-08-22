@@ -9,7 +9,11 @@ module.exports = function(app) {
 
     //This route will add a new friend to the friends.js file while also running the compatability function
     app.post('/api/friends', function(req,res) {
-        console.log(req.body)
+        fs.appendFile('./app/data/friends.js', JSON.stringify(req.body)+'\r', function(err) {
+            if (err) throw err
+            console.log('Write successful!')
+            res.json(true)
+        })
     })
     
 }
