@@ -12,7 +12,7 @@ module.exports = function(app) {
         fs.appendFile('./app/data/friends.js', JSON.stringify(req.body)+'\r', function(err) {
             if (err) throw err
             console.log('Write successful!')
-            res.json(true)
+            res.redirect('/survey')
         })
     })
     
