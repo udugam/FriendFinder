@@ -10,15 +10,115 @@
 <body>
     <div class="container">
         <h1>Survey Questions</h1>
+        <h2></h2>
         <form action="/api/friends" method="post">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <label for="name">Name (Required)</label>
+                <input type="text" class="form-control" id="name" name="friendName">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" name="password" placeholder="Password">
+                <label for="picture">Link to Photo (Required)</label>
+                <input type="text" class="form-control" id="picture" name="photoLink">
+            </div>
+            <div class="form-group">
+                <label for="question1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                <select class="form-control" name="results" id="question1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2">Generally speaking, you rely more on your experience than your imagination.</label>
+                <select class="form-control" name="results" id="question2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+                <select class="form-control" name="results" id="question3">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4">You rarely do something just out of sheer curiosity.</label>
+                <select class="form-control" name="results" id="question4">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question5">People can rarely upset you.</label>
+                <select class="form-control" name="results" id="question5">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question6">It is often difficult for you to relate to other people’s feelings.</label>
+                <select class="form-control" name="results" id="question6">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question7">In a discussion, truth should be more important than people’s sensitivities.</label>
+                <select class="form-control" name="results" id="question7">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question8">You rarely get carried away by fantasies and ideas.</label>
+                <select class="form-control" name="results" id="question8">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+                <select class="form-control" name="results" id="question9">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question10">You feel more energetic after spending time with a group of people.</label>
+                <select class="form-control" name="results" id="question10">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
