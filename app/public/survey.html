@@ -134,7 +134,8 @@
                 </button>
                 </div>
                 <div class="modal-body">
-                
+                    <h5 id="matchName"></h5>
+                    <img src="" id="matchPhoto" class="img-fluid" alt="Responsive image">
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -155,8 +156,9 @@
             url: '/api/friends',
             method: 'POST',
             data: values
-             }).then(function(response) {
-                 console.log(response)
+            }).then(function(response) {
+                $("#matchName").text(response.friendName)
+                $("#matchPhoto").attr("src", response.photoLink)
             }) 
         })
     </script>
